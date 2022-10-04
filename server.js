@@ -2,7 +2,6 @@ var express = require("express");
 var path = require("path");
 var app = express();
 var HTTP_PORT = process.env.PORT || 8080;
-
 app.listen(HTTP_PORT);
 console.log('Express http server listening on port http://localhost:' + HTTP_PORT);
 
