@@ -1,9 +1,9 @@
 var express = require("express");
 var path = require("path");
 var app = express();
-var HTTP_PORT = process.env.PORT || 8080;
-app.listen(HTTP_PORT);
-console.log('Express http server listening on port http://localhost:' + HTTP_PORT);
+var HTTP_PORTS = process.env.PORT || 8080;
+app.listen(HTTP_PORTS);
+console.log('Express http server listening on port http://localhost:' + HTTP_PORTS);
 
 app.get("/", (req, res) => {
     res.send("<body style='background: white;'><h2>Declaration (Instruction: text size in heading 2):</h2> <p>Instruction: The rest text is displayed in paragraph as shown in screenshot.</p>" +
